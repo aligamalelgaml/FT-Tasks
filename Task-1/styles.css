@@ -85,6 +85,7 @@ hr {
 
 .desktop-img-caption {
     display: flex;
+    gap: 25px;
 }
 
 .desktop-img-caption-title {
@@ -93,6 +94,6 @@ hr {
 }
 
 .desktop-img-caption-description {
-    flex: 2;
+    flex: 1;
     align-self: center;
 }
