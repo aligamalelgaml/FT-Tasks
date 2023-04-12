@@ -35,6 +35,7 @@ a {
 
 .left-container {
     flex: auto;
+    direction: column;
     width: 75%;
 }
 
@@ -51,12 +52,12 @@ a {
 }
 
 .desktop-img {
-    max-width:100%;
+    max-width: 100%;
   }
 
 .yellow-header {
     color: orange;
-
+    font-size: 36px;
 }
 
 .post-title {
@@ -80,4 +81,18 @@ a {
 
 hr {
     border-color: grey;
+}
+
+.desktop-img-caption {
+    display: flex;
+}
+
+.desktop-img-caption-title {
+    flex: 1;
+    font-size: 52px;
+}
+
+.desktop-img-caption-description {
+    flex: 2;
+    align-self: center;
 }
