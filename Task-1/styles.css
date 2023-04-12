@@ -35,13 +35,11 @@ a {
 
 .left-container {
     flex: auto;
-    direction: column;
     width: 75%;
 }
 
 .right-container {
     flex: auto;
-    direction: column;
     width: 25%;
     background-color: black;
     padding: 0px 25px 0px 25px;
@@ -96,4 +94,6 @@ hr {
 .desktop-img-caption-description {
     flex: 1;
     align-self: center;
+    display: flex;
+    flex-direction: column;
 }
