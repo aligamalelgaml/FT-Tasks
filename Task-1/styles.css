@@ -127,6 +127,7 @@ button {
 .footer{
     display: flex;
     padding: 52px 0px;
+    justify-content: space-between;
 }
 
 .retro-pc-img {
