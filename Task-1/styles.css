@@ -1,11 +1,13 @@
 .header {
     display: flex;
-    padding: 25px;
+    padding: 12px 0px;
 }
 
 
 body {
     background-color: whitesmoke;
+    padding: 0 120px;
+
 }
 
 .navbar {
@@ -25,7 +27,7 @@ a {
 
 .middle{
     display: flex;
-    padding: 25px;
+    padding: 12px 0px;
     gap: 40px;
 }
 
@@ -34,13 +36,11 @@ a {
 }
 
 .left-container {
-    flex: auto;
-    width: 75%;
+    flex: 70%;
 }
 
 .right-container {
-    flex: auto;
-    width: 25%;
+    flex: 30%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -70,6 +70,7 @@ a {
 .post-details {
     color: gray;
     font-size: 17px;
+    line-height: 25px;
 }
 
 .text-inter-bold {
@@ -94,19 +95,25 @@ hr {
 
 .desktop-img-caption-title {
     flex: 1;
-    font-size: 52px;
+    font-size: 56px;
+}
+
+.desktop-img-caption-title p {
+    margin: 14px 0 0 0;
+    max-width: 350px;
 }
 
 .desktop-img-caption-description {
     flex: 1;
-    align-self: center;
     display: flex;
     flex-direction: column;
+    padding: 14px 0 0 0;
 }
 
 .red-button {
     display: flex;
     justify-content: flex-start;
+    margin-top: auto;
 }
 
 button {
@@ -114,5 +121,20 @@ button {
     color: white;
     font-family: Inter;
     letter-spacing: 4px;
-    padding: 10px 45px 10px 45px;
+    padding: 15px 45px 15px 45px;
+}
+
+.footer{
+    display: flex;
+    /* gap: 40px; */
+    padding: 52px 0px;
+}
+
+.retro-pc-img {
+    max-width:60%;
+    height:auto;
+}
+
+.topic-and-image {
+    display:flex;
 }
