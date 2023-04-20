@@ -98,7 +98,7 @@ body {
 
 /* END OF MIDDLE CONTENT STYLING */
 
-/* START OF LAST CONTENT STYLING */
+/* START OF FOOTER CONTENT STYLING */
 
 .footer {
     display: flex;
@@ -112,7 +112,7 @@ body {
 
 .footer-content{
     display: flex;
-    gap: 25px;
+    gap: 15px;
     margin: 25px 0px 15px 0px;
 }
 
@@ -122,11 +122,12 @@ body {
     flex: 1;
     background-color: #2151CD;
     border-radius: 15px;
-    padding: 10px;
+    padding: 15px;
 }
 
 .footer-content-post-title {
     display: flex;
+    align-items: center;
 }
 
 .footer-content-post-details {
@@ -134,7 +135,19 @@ body {
 }
 
 .post-title {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 1000;
+    font-size: 22px;
     color: white;
+    margin: 10px;
+}
+
+.post-details {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    color: white;
+    margin: 5px;
+    line-height: 20px;
 }
 
 svg.icons {
@@ -143,3 +156,4 @@ svg.icons {
     fill: white;
 }
 
+/* END OF FOOTER CONTENT STYLING */
