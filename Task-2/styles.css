@@ -1,0 +1,41 @@
+.header {
+    display: flex;
+    justify-content: center;
+    background-color: #3574E6;
+}
+
+.middle-header {
+    display: flex;
+    width: 1500px;
+}
+
+.left-header {
+    flex: 1;
+}
+
+.header-title {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 1000;
+    color: white;
+    font-size: 20px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.right-header {
+    flex: 1;
+    display: flex;
+    gap: 50px;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.nav-bar {
+    text-decoration: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 1000;
+    font-size: 15px;
+    color: white;
+
+
+}
