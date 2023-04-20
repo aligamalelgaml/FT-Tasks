@@ -1,3 +1,5 @@
+/* START OF HEADER STYLING */
+
 .header {
     display: flex;
     justify-content: center;
@@ -9,7 +11,7 @@
     width: 1500px;
 }
 
-.left-header {
+.title-header {
     flex: 1;
 }
 
@@ -22,10 +24,10 @@
     margin-bottom: 16px;
 }
 
-.right-header {
+.navbar-header {
     flex: 1;
     display: flex;
-    gap: 50px;
+    gap: 40px;
     justify-content: flex-end;
     align-items: center;
 }
@@ -36,6 +38,45 @@
     font-weight: 1000;
     font-size: 15px;
     color: white;
+}
 
+/* END OF HEADER STYLING */
 
+/* START OF MIDDLE CONTENT STYLING */
+
+.content {
+    background-color: #2151CD;
+}
+
+.middle-content {
+    display: flex;
+    justify-content: space-around;
+}
+
+.middle-content-info {
+    flex: 1;
+}
+
+.middle-content-title-p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 1000;
+    font-size: 48px;
+    color: white;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.middle-content-details-p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    color: white;
+    line-height: 18px;
+}
+
+.middle-content-picture {
+    flex: 1;
+}
+
+.middle-content-picture-img {
+    max-width: 100%;
 }
