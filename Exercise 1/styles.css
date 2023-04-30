@@ -1,0 +1,73 @@
+body {
+    padding: 15px;
+}
+
+
+.post {
+    display: flex;
+    gap: 15px;
+}
+
+/* img {
+    width: 100%;
+    height: auto;
+} */
+
+.imgContainer {
+    width: auto;
+    height: 100%;
+    flex: 10%;
+    overflow: hidden;
+}
+
+.txtContainer {
+    display: flex;
+    flex-direction: column;
+    flex: 90%
+}
+
+.topText {
+    display: flex;
+}
+
+.textTitle {
+    flex: 1;
+    justify-self: flex-start;
+}
+
+.textTitleDecoration {
+    color: #42C3AF;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 5px;
+}
+
+.topDueDate {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+}
+
+.boldTextTitle {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+    margin: 5px;
+}
+
+.boldTextTitle {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+}
+
+.middleTextP {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.startButton {
+    display: flex;
+    justify-content: flex-end;
+}
+
+button {
+    background-color: #42C3AF;
+    padding: 5px 15px 5px 15px;
+}

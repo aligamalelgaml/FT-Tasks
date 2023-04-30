@@ -1,0 +1,91 @@
+body {
+    padding: 20px;
+    background-color: grey;
+}
+
+p {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    gap: 25px;
+}
+
+.left-container {
+    flex: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.right-container {
+    flex: 70%;
+    background-color: beige;
+}
+
+.post {
+    background-color: beige;
+    padding: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+
+.egypt-flag {
+    border-top: solid 5px;
+    border-image: linear-gradient(to right, red , red 30%, white 30%,white 65%, black 65%, black 100%) 1;
+}
+
+.us-flag {
+    border-top: solid 5px;
+    border-image: linear-gradient(to right, red 30%, red 30%, white 0%,white 65%, blue 65%, blue 75%) 1;
+}
+
+.emirates-flag {
+    border-top: solid 5px;
+    border-image: linear-gradient(to right, green 30%, green 30%, red 0%,red 65%, black 65%, black 75%) 1;
+}
+
+.tag-p {
+    font-size: 12px;
+    font-weight: bold;
+    background-color: white;
+    border-radius: 15px;
+    border: solid 2px;
+    border-color: green;
+    padding: 5px 10px 5px 10px;
+    display: inline;
+}
+
+.tag {
+    margin-top: 10px;
+}
+
+.post-title-p {
+    margin: 10px 0px 10px 0px;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.main-post-and-tag {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+}
+
+.main-post {
+    display: flex;
+    gap: 10px;
+}
+
+.main-post-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-post-title-p {
+    font-weight: bolder;
+    font-size: 24px;
+}
