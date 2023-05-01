@@ -12,4 +12,4 @@ Completed using Flexbox
 
 ## Task 3
 
-![image](https://user-images.githubusercontent.com/43727030/235442996-eabb2dc6-f9d7-40c2-8d43-e91edaf569cc.png)
+![image](https://user-images.githubusercontent.com/43727030/235443103-2792e121-0776-4a93-927c-ce1e12bf1174.png)
