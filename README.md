@@ -13,3 +13,5 @@ Completed using Flexbox
 ## Task 3
 
 ![image](https://user-images.githubusercontent.com/43727030/235448256-7633dc66-3530-4c3f-be6a-fc1c63051168.png)
+
+Completed using CSS Grid and Flexbox.
