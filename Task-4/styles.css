@@ -1,0 +1,16 @@
+@media (min-width: 992px)
+{
+    .navbar-expand-lg .navbar-nav {
+        gap: 25px;
+    }
+}
+
+.nav-link {
+    font-weight: 800;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.nav-link:focus {
+    text-decoration: underline;
+    text-underline-offset: 15px;
+}
