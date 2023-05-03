@@ -1,5 +1,5 @@
 body {
-    padding-top: 15rem;
+    padding-top: 5rem;
 }
 
 .nav-link {
@@ -13,8 +13,27 @@ body {
 }
 
 .greeting-card {
-    background-color: aqua;
+    width: 130px;
+    background-color: #51dcc5;
+    color: white;
+    font-weight: 600;
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;
     border-bottom-right-radius: 15px;
+}
+
+.profile-name {
+    font-size: 48px;
+    font-weight: 700;
+    letter-spacing: 0.1 rem;
+}
+
+.about-me {
+    font-size: 34px;
+    font-weight: 500;
+    letter-spacing: 0.1 rem;
+}
+
+.cv-badge {
+    background-color: #51dcc5;
 }
