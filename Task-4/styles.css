@@ -8,7 +8,7 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.nav-link:focus {
+.nav-link:focus, .far-underline {
     text-decoration: underline;
     text-underline-offset: 15px;
 }
