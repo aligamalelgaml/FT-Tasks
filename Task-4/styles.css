@@ -3,6 +3,11 @@ body {
     padding-top: 5rem;
 }
 
+.large-icon {
+    padding-top: 20px;
+    font-size: 100px;
+}
+
 .nav-link {
     font-weight: 800;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
