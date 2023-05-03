@@ -8,6 +8,11 @@ body {
     font-size: 100px;
 }
 
+.meduim-icon {
+    padding: 15px;
+    font-size: 30px;
+}
+
 .nav-link {
     font-weight: 800;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
