@@ -1,4 +1,5 @@
 body {
+    background-color: #edf1fa;
     padding-top: 5rem;
 }
 
@@ -36,4 +37,10 @@ body {
 
 .cv-badge {
     background-color: #51dcc5;
+}
+
+.card-title {
+    font-size: 32px;
+    font-weight: 500;
+
 }
