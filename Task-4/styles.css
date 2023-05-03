@@ -1,8 +1,5 @@
-@media (min-width: 992px)
-{
-    .navbar-expand-lg .navbar-nav {
-        gap: 25px;
-    }
+body {
+    padding-top: 15rem;
 }
 
 .nav-link {
@@ -13,4 +10,11 @@
 .nav-link:focus {
     text-decoration: underline;
     text-underline-offset: 15px;
+}
+
+.greeting-card {
+    background-color: aqua;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
 }
