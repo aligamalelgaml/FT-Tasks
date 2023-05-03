@@ -15,7 +15,6 @@ body {
 
 .greeting-card {
     width: 130px;
-    background-color: #51dcc5;
     color: white;
     font-weight: 600;
     border-top-right-radius: 15px;
@@ -35,12 +34,60 @@ body {
     letter-spacing: 0.1 rem;
 }
 
-.cv-badge {
+.bg-cyan {
     background-color: #51dcc5;
 }
 
 .card-title {
     font-size: 32px;
     font-weight: 500;
+}
 
+.progress-bar-circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.progress-bar-circle-95 {
+    background: 
+    radial-gradient(closest-side, white 79%, transparent 80% 100%),
+    conic-gradient(#51dcc5 95%, grey 0);  
+}
+  
+.progress-bar-circle-95::before {
+    content: "95%";
+}
+
+.progress-bar-circle-55 {
+    background: 
+    radial-gradient(closest-side, white 79%, transparent 80% 100%),
+    conic-gradient(#51dcc5 55%, grey 0);  
+}
+  
+.progress-bar-circle-55::before {
+    content: "55%";
+}
+
+.progress-bar-circle-86 {
+    background: 
+    radial-gradient(closest-side, white 79%, transparent 80% 100%),
+    conic-gradient(#51dcc5 86%, grey 0);  
+}
+  
+.progress-bar-circle-86::before {
+    content: "86%";
+}
+
+.progress-bar-circle-60 {
+    background: 
+    radial-gradient(closest-side, white 79%, transparent 80% 100%),
+    conic-gradient(#51dcc5 60%, grey 0);  
+}
+  
+.progress-bar-circle-60::before {
+    content: "60%";
 }
