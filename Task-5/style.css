@@ -1,0 +1,25 @@
+section {
+  padding: 10px 30px 10px 30px;
+}
+
+.bg-deepblue {
+  background-color: #0A2640;
+}
+
+.segoui-font, .header {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header {
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 84px;
+}
+
+.header-subtitle {
+  font-family: sans-serif;
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 400;
+  color: #F1F1F1;
+}
