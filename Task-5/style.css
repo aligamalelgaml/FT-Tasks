@@ -6,6 +6,18 @@ section {
   background-color: #0A2640;
 }
 
+.turq-color {
+  color: #4FE9A4;
+}
+
+.grey-color {
+  color: #777777;
+}
+
+.turq-button-color {
+  background-color: #65E4A3;
+}
+
 .segoui-font, .header {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
