@@ -6,12 +6,40 @@ section {
   background-color: #0A2640;
 }
 
+.color-deepblue {
+  color: #0A2640;
+}
+
 .turq-color {
   color: #4FE9A4;
 }
 
 .grey-color {
   color: #777777;
+}
+
+.deepblue-border {
+  border-color: #0A2640 !important;
+  padding: 0px 15px 0px 15px;
+}
+
+.post-title-lh {
+  line-height: 150%;
+}
+
+hr {
+  height: 0.4rem;
+  opacity: 1;
+}
+
+.fs-7 {
+  font-size: 0.85rem;
+}
+
+.background-elipse {
+  background-image: url("./assets/Ellipse 9.png");
+  background-repeat: no-repeat;
+  background-position: top right;
 }
 
 .turq-button-color {

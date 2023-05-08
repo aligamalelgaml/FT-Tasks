@@ -1,0 +1,27 @@
+.bg-top {
+  background-color: #0A2640;
+}
+
+.bg-title {
+  background: #65E4A3;
+  color: #65E4A3;
+}
+
+.title-font {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  font-weight: 700;
+  font-size: 42px;
+}
+
+.rec-small {
+  background: #65E4A3;
+  width: 4vw;
+  height: 3vh;
+}
+
+.rec-large {
+  background: #65E4A3;
+  width: 6vw;
+  height: 3vh;
+}
