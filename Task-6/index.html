@@ -68,11 +68,11 @@
 
           <div class="gg-search ms-sm-5"></div>
 
-          <div class="circle-purple ms-sm-5"></div>
+          <a onclick='switchTheme("purple")' href="#"><div class="circle-purple ms-sm-5"></div></a>
 
-          <div class="circle-green ms-sm-5"></div>
+          <a onclick='switchTheme("green")' href="#"><div class="circle-green ms-sm-5"></div></a>
 
-          <a href="#" class="btn bg-purple ms-sm-5 rounded-pill text-white glow">Create a new account</a>
+          <a href="#" class="btn ms-sm-5 rounded-pill text-white glow-purple toggle-glow">Create a new account</a>
 
           <a href="#" class="btn ms-sm-3 border border-dark border-2 ps-sm-3 pe-sm-3 rounded-pill text-black">Login</a>
 
@@ -81,7 +81,7 @@
         </div>
       </nav> 
     
-    <section class="bg-purple">
+    <section class="purple-background-theme toggle-hero-background">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-4 p-0">
@@ -125,7 +125,7 @@
                 <div class="col-12 col-sm-4 d-flex flex-column align-items-center">
                     <div class="card" style="width: 18rem;">
                         <ul class="list-group list-group-flush text-center">
-                          <li class="list-group-item bg-purple text-white fs-4 fw-bold">Risk Factor</li>
+                          <li class="list-group-item purple-background-theme toggle-card-background text-white fs-4 fw-bold">Risk Factor</li>
                           <li class="list-group-item pt-4 pb-2 fw-bold">High</li>
                         </ul>
                       </div>
@@ -134,7 +134,7 @@
                 <div class="col-12 col-sm-4 mt-4 mt-sm-0 d-flex flex-column align-items-center">
                     <div class="card" style="width: 18rem;">
                         <ul class="list-group list-group-flush text-center">
-                          <li class="list-group-item bg-purple text-white fs-4 fw-bold">Evaluation</li>
+                          <li class="list-group-item purple-background-theme toggle-card-background text-white fs-4 fw-bold">Evaluation</li>
                           <li class="list-group-item pt-4 pb-2 fw-bold">Mondays, Thuesdays</li>
                         </ul>
                       </div>
@@ -143,7 +143,7 @@
                 <div class="col-12 col-sm-4 mt-4 mt-sm-0 d-flex flex-column align-items-center">
                     <div class="card" style="width: 18rem;">
                         <ul class="list-group list-group-flush text-center">
-                          <li class="list-group-item bg-purple text-white fs-4 fw-bold">Minimum Subscription</li>
+                          <li class="list-group-item purple-background-theme toggle-card-background text-white fs-4 fw-bold">Minimum Subscription</li>
                           <li class="list-group-item pt-4 pb-2 fw-bold">5000 EGP</li>
                         </ul>
                       </div>
@@ -167,6 +167,7 @@
         </div>
     </section>
 
+    <script src="./switchTheme.js"></script>
     <script src="./generateCards.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>

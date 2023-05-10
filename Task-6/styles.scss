@@ -1,9 +1,13 @@
+$deraya-purple: #510B76;
+$deraya-green: #0B760F;
+$deraya-orange: #F58026;
+
 .text-black {
     color: black;
 }
 
-.bg-purple {
-    background-color: #510B76;
+a, p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .bg-grey {
@@ -11,19 +15,65 @@
 }
 
 .color-orange {
-    color: #F58026;
+    color: $deraya-orange;
 }
 
-.glow {
-    box-shadow: 0px 0px 16px 0.4rem #510B76;
+// JS USE
+
+.green-color-theme {
+    color: $deraya-green;
 }
 
-.purple-filter {
-    filter: grayscale(100%) brightness(50%) sepia(40%) hue-rotate(-100deg) saturate(300%) contrast(1);
+.green-background-theme {
+    background-color: $deraya-green;
 }
 
-a, p {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+.purple-color-theme {
+    color: $deraya-purple;
+}
+
+.purple-background-theme {
+    background-color: $deraya-purple;
+}
+
+.glow-purple {
+    animation: glowing-purple 1300ms infinite;
+}
+
+.glow-green {
+    animation: glowing-green 1300ms infinite;
+}
+
+// END
+
+@keyframes glowing-purple {
+    0% {
+      background-color: $deraya-purple;
+      box-shadow: 0 0 3px $deraya-purple;
+    }
+    50% {
+      background-color: $deraya-purple;
+      box-shadow: 0 0 16px $deraya-purple;
+    }
+    100% {
+      background-color: $deraya-purple;
+      box-shadow: 0 0 3px $deraya-purple;
+    }
+}
+
+@keyframes glowing-green {
+    0% {
+      background-color: $deraya-green;
+      box-shadow: 0 0 3px $deraya-green;
+    }
+    50% {
+      background-color: $deraya-green;
+      box-shadow: 0 0 16px $deraya-green;
+    }
+    100% {
+      background-color: $deraya-green;
+      box-shadow: 0 0 3px $deraya-green;
+    }
 }
 
 .gg-search {
@@ -51,7 +101,7 @@ a, p {
     transform: rotate(-45deg);
     top: 10px;
     left: 12px
-} 
+}
 
 @mixin shape-circle($color) {
     box-sizing: border-box;
@@ -66,15 +116,15 @@ a, p {
   }
 
 .circle-purple {
-    @include shape-circle(#510B76);
+    @include shape-circle($deraya-purple);
 }
 
 .circle-green {
-    @include shape-circle(#0B760F);
+    @include shape-circle($deraya-green);
 }
 
 .circle-orange {
-    @include shape-circle(#F58026);
+    @include shape-circle($deraya-orange);
 }
 
 .gg-home-alt {
