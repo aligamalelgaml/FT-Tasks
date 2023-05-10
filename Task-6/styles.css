@@ -1,0 +1,70 @@
+body {
+  padding: 1.5rem 3rem 1.5rem 3rem;
+}
+
+.text-black {
+  color: black;
+}
+
+.bg-purple {
+  background-color: #510B76;
+}
+
+.glow {
+  box-shadow: 0px 0px 16px 0.4rem #510B76;
+}
+
+a, p {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.gg-search {
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  transform: scale(var(--ggs, 1));
+  width: 16px;
+  height: 16px;
+  border: 2px solid;
+  border-radius: 100%;
+  margin-left: -4px;
+  margin-top: -4px;
+}
+
+.gg-search::after {
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  position: absolute;
+  border-radius: 3px;
+  width: 2px;
+  height: 8px;
+  background: currentColor;
+  transform: rotate(-45deg);
+  top: 10px;
+  left: 12px;
+}
+
+.circle-purple {
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  transform: scale(var(--ggs, 1));
+  width: 24px;
+  height: 24px;
+  border: 12px solid;
+  border-radius: 100px;
+  color: #510B76;
+}
+
+.circle-green {
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  transform: scale(var(--ggs, 1));
+  width: 24px;
+  height: 24px;
+  border: 12px solid;
+  border-radius: 100px;
+  color: #0B760F;
+}
