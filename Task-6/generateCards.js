@@ -39,12 +39,12 @@ Voluptatum veritatis, soluta illo facere fugit reiciendis repellat
 laboriosam consequuntur optio voluptatem voluptates vero ullam
 aliquid suscipit similique, esse in provident magni.`);
 
-let card5 = new card("fa-arrow-trend", "Placeholder Title", `Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+let card5 = new card("fa-arrow-trend-up", "Placeholder Title", `Lorem ipsum dolor, sit amet consectetur adipisicing elit.
 Voluptatum veritatis, soluta illo facere fugit reiciendis repellat
 laboriosam consequuntur optio voluptatem voluptates vero ullam
 aliquid suscipit similique, esse in provident magni.`);
 
-let card6 = new card("fa-trend-up", "Placeholder Title", `Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+let card6 = new card("fa-dollar-sign", "Placeholder Title", `Lorem ipsum dolor, sit amet consectetur adipisicing elit.
 Voluptatum veritatis, soluta illo facere fugit reiciendis repellat
 laboriosam consequuntur optio voluptatem voluptates vero ullam
 aliquid suscipit similique, esse in provident magni.`);
