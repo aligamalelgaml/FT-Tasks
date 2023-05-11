@@ -2,8 +2,16 @@ $deraya-purple: #510B76;
 $deraya-green: #0B760F;
 $deraya-orange: #F58026;
 
+.navbar-toggler-icon {
+    background-image: url();
+}
+
 .text-black {
     color: black;
+}
+
+.purple-border {
+    border-color: $deraya-purple;
 }
 
 a, p {

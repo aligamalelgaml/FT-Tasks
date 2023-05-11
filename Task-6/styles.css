@@ -2,6 +2,10 @@
   color: black;
 }
 
+.purple-border {
+  border-color: #510B76;
+}
+
 a, p {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
