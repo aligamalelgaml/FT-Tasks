@@ -50,7 +50,6 @@ cardList = [card1, card2, card3, card4, card5, card6];
 
 
 cardList.forEach(element => {
-  console.log(element.htmlContent);
   document.getElementById("js-content").appendChild(elementFromHtml(element.htmlContent));
 });
 
