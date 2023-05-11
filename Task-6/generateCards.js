@@ -6,7 +6,10 @@ class card {
 
     this.htmlContent = `<div class="col-12 col-sm-4 mb-5 mb-sm-4">
     <div class="card shadow p-2 w-75 border border-0 rounded-3 m-auto">
-        <i class="fa-solid ms-2 ${this.icon} fs-1 color-orange mb-3"></i>
+    <span class="fa-stack fa-2x">
+    <i class="fa-solid fa-square fa-stack-2x color-grey"></i>
+    <i class="fa-solid ${this.icon} fa-stack-1x color-orange"></i>
+    </span>
     <span class="text-black ms-2 fw-bold fs-5">${this.title}</span>
     <p class="ms-2 fs-6 mt-2">
       ${this.details}

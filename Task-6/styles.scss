@@ -18,6 +18,10 @@ a, p {
     color: $deraya-orange;
 }
 
+.color-grey {
+    color: #FAF9F9;
+}
+
 // JS USE
 
 .green-color-theme {
@@ -42,6 +46,19 @@ a, p {
 
 .glow-green {
     animation: glowing-green 1300ms infinite;
+}
+
+#js-content {
+    position: relative;
+}
+
+#asd {
+    position: absolute;
+    width: 80%;
+    height: 100%;
+    bottom: 1%;
+    background-color: #E1D9E6;
+    opacity: 0.2;
 }
 
 // END
