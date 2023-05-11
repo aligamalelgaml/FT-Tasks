@@ -1,0 +1,29 @@
+a {
+  line-height: 1em;
+  overflow: hidden;
+  width: fit-content;
+}
+
+.circle-blue {
+  box-sizing: border-box;
+  position: relative;
+  display: inline-block;
+  transform: scale(var(--ggs, 1));
+  width: 24px;
+  height: 24px;
+  border: 12px solid;
+  border-radius: 100px;
+  color: #2e55f7;
+}
+
+.circle-orange {
+  box-sizing: border-box;
+  position: relative;
+  display: inline-block;
+  transform: scale(var(--ggs, 1));
+  width: 24px;
+  height: 24px;
+  border: 12px solid;
+  border-radius: 100px;
+  color: #ffbc2e;
+}
