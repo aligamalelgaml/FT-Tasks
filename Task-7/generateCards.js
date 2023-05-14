@@ -1,10 +1,10 @@
 let jsonCards = [
-    {cardTitle:"Placeholder Title", cardText:"Lorem ipsum dolor sit amet consectetur adipisicing elitatae obcaecati"},
-    {cardTitle:"Placeholder Title", cardText:"Lorem ipsum dolor sit amet consectetur adipisicing elitatae obcaecati"},
-    {cardTitle:"Placeholder Title", cardText:"Lorem ipsum dolor sit amet consectetur adipisicing elitatae obcaecati"},
-    {cardTitle:"Placeholder Title", cardText:"Lorem ipsum dolor sit amet consectetur adipisicing elitatae obcaecati"},
-    {cardTitle:"Placeholder Title", cardText:"Lorem ipsum dolor sit amet consectetur adipisicing elitatae obcaecati"},
-    {cardTitle:"Placeholder Title", cardText:"Lorem ipsum dolor sit amet consectetur adipisicing elitatae obcaecati"}
+    {cardTitle:"Placeholder Title 1", cardText:"Lorem ipsum dolor sit amet consectetur adipisicing elitatae obcaecati"},
+    {cardTitle:"Placeholder Title 2", cardText:"Lorem ipsum dolor sit amet consectetur adipisicing elitatae obcaecati"},
+    {cardTitle:"Placeholder Title 3", cardText:"Lorem ipsum dolor sit amet consectetur adipisicing elitatae obcaecati"},
+    {cardTitle:"Placeholder Title 4", cardText:"Lorem ipsum dolor sit amet consectetur adipisicing elitatae obcaecati"},
+    {cardTitle:"Placeholder Title 5", cardText:"Lorem ipsum dolor sit amet consectetur adipisicing elitatae obcaecati"},
+    {cardTitle:"Placeholder Title 6", cardText:"Lorem ipsum dolor sit amet consectetur adipisicing elitatae obcaecati"}
 ]
 
 let htmlTemplate = `

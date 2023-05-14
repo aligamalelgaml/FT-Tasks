@@ -1,0 +1,257 @@
+$deraya-purple: #510B76;
+$deraya-green: #0B760F;
+$deraya-orange: #F58026;
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.text-black {
+    color: black;
+}
+
+.purple-border {
+    border-color: $deraya-purple;
+}
+
+.hidden {
+    display: none;
+}
+
+a, p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.bg-grey {
+    background-color: #FAF9F9;
+}
+
+.color-orange {
+    color: $deraya-orange;
+}
+
+.color-grey {
+    color: #FAF9F9;
+}
+
+// JS USE
+
+.green-color-theme {
+    color: $deraya-green;
+}
+
+.green-background-theme {
+    background-color: $deraya-green;
+}
+
+.purple-color-theme {
+    color: $deraya-purple;
+}
+
+.purple-background-theme {
+    background-color: $deraya-purple;
+}
+
+.glow-purple {
+    animation: glowing-purple 1300ms infinite;
+}
+
+.glow-green {
+    animation: glowing-green 1300ms infinite;
+}
+
+#js-content {
+    position: relative;
+}
+
+.relative-container {
+    position: relative;
+}
+
+#shadow-background {
+    position: absolute;
+    width: 80%;
+    height: 100%;
+    bottom: 1%;
+    background-color: #E1D9E6;
+    border-radius: 25px;
+    opacity: 0.2;
+}
+
+#grey-block {
+    position: absolute;
+    width: 50%;
+    height: 70%;
+    left: 10%;
+    top: 33%;
+    background-color: #E1D9E6;
+    border-radius: 25px;
+    opacity: 0.2;
+    z-index: -1;
+}
+
+// END
+
+@keyframes glowing-purple {
+    0% {
+      background-color: $deraya-purple;
+      box-shadow: 0 0 3px $deraya-purple;
+    }
+    50% {
+      background-color: $deraya-purple;
+      box-shadow: 0 0 16px $deraya-purple;
+    }
+    100% {
+      background-color: $deraya-purple;
+      box-shadow: 0 0 3px $deraya-purple;
+    }
+}
+
+@keyframes glowing-green {
+    0% {
+      background-color: $deraya-green;
+      box-shadow: 0 0 3px $deraya-green;
+    }
+    50% {
+      background-color: $deraya-green;
+      box-shadow: 0 0 16px $deraya-green;
+    }
+    100% {
+      background-color: $deraya-green;
+      box-shadow: 0 0 3px $deraya-green;
+    }
+}
+
+.gg-search {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    transform: scale(var(--ggs,1));
+    width: 16px;
+    height: 16px;
+    border: 2px solid;
+    border-radius: 100%;
+    margin-left: -4px;
+    margin-top: -4px
+}
+   
+.gg-search::after {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    border-radius: 3px;
+    width: 2px;
+    height: 8px;
+    background: currentColor;
+    transform: rotate(-45deg);
+    top: 10px;
+    left: 12px
+}
+
+@mixin shape-circle($color) {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    transform: scale(var(--ggs,1));
+    width: 24px;
+    height: 24px;
+    border: 12px solid;
+    border-radius: 100px;
+    color: $color;
+  }
+
+.circle-purple {
+    @include shape-circle($deraya-purple);
+}
+
+.circle-green {
+    @include shape-circle($deraya-green);
+}
+
+.circle-orange {
+    @include shape-circle($deraya-orange);
+}
+
+.gg-home-alt {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    transform: scale(var(--ggs,1));
+    width: 18px;
+    height: 14px;
+    border: 2px solid;
+    border-top: 0;
+    border-radius: 2px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    margin-bottom: -2px
+   }
+   
+.gg-home-alt::after,
+.gg-home-alt::before {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute
+}
+   
+.gg-home-alt::before {
+    border-top: 2px solid;
+    border-left: 2px solid;
+    border-top-left-radius: 4px;
+    transform: rotate(45deg);
+    top: -5px;
+    border-radius: 3px;
+    width: 14px;
+    height: 14px;
+    left: 0
+}
+   
+.gg-home-alt::after {
+    width: 6px;
+    height: 10px;
+    background: currentColor;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    left: 4px;
+    bottom: -2px
+} 
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow-y: initial; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
