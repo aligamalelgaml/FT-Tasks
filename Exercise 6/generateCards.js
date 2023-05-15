@@ -17,7 +17,7 @@ class card {
       <p class="ms-2 fs-6 mt-2">
         ${this.details}
       </p>
-      <button id="popUpBtn" onclick="popUp(event)">Read More</button>
+      <button class="popUpBtnCard purple-background-theme toggle-button-background" onclick="popUp(event)">Read More</button>
       </div>
       </div>
       `;
@@ -103,15 +103,20 @@ function popUp(event) {
 
   var popUpTitle = document.getElementById("popUpTitle");
   var popUpText = document.getElementById("popUpText");
-  
-  var title = event.target.previousSibling.previousSibling.previousSibling.previousSibling.innerHTML;
-  var text = event.target.previousSibling.previousSibling.innerHTML;
+
+  if(event.target.classList.contains("popUpBtnCard")) {
+    var title = event.target.previousSibling.previousSibling.previousSibling.previousSibling.innerHTML;
+    var text = event.target.previousSibling.previousSibling.innerHTML;
+  } else if(event.target.classList.contains("popUpBtnBrief")) {
+    var title = event.target.previousElementSibling.previousElementSibling.innerHTML;
+    var text = event.target.previousElementSibling.innerHTML;
+  }
 
   popUpTitle.innerHTML = title;
-  popUpText.innerHTML = text;
-  
-  popUpText.firstElementChild.classList.toggle("hidden");
+  popUpText.innerHTML = text.replace("...", ""); //replaces ... with empty whitespace to return text to original form.
 
+  popUpText.firstElementChild.classList.toggle("hidden");
+  
   popup.style.display = "block";
 }
 
@@ -140,12 +145,13 @@ function injectBrief() {
   var brief = document.getElementById("js-content-brief");
 
   if(briefText.length > 300) {
-    var briefText = truncate(briefText, 299);
-
-    brief.appendChild()
+    briefText = truncate(briefText, 299);
   }
 
-  briefHtml = `<p>`.concat(briefText).concat('</p>')
+  var briefHtml = `<p>`.concat(briefText).concat(`</p>`);
 
+  var button = `<button class="popUpBtnBrief purple-background-theme toggle-button-background" onclick="popUp(event)">Read More</button>`;
+  
   brief.appendChild(elementFromHtml(briefHtml));
+  brief.appendChild(elementFromHtml(button));
 }
