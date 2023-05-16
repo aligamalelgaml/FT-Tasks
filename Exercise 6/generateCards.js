@@ -3,7 +3,7 @@ class card {
     this.icon = icon;
     this.title = title;
 
-    if(details.length > 120) {
+    if (details.length > 120) {
       this.details = truncate(details, 119);
 
       this.htmlContent = `
@@ -23,6 +23,7 @@ class card {
       `;
     } else {
       this.details = details;
+
       this.htmlContent = `
       <div class="col-12 col-sm-4 mb-5 mb-sm-4">
       <div class="card shadow p-2 w-75 border border-0 rounded-3 m-auto h-100">
@@ -91,9 +92,9 @@ injectBrief();
 
 
 function elementFromHtml(html) { // helper function
-    const template = document.createElement("template");
-    template.innerHTML = html.trim();
-    return template.content.firstElementChild;
+  const template = document.createElement("template");
+  template.innerHTML = html.trim();
+  return template.content.firstElementChild;
 }
 
 function popUp(event) {
@@ -104,19 +105,19 @@ function popUp(event) {
   var popUpTitle = document.getElementById("popUpTitle");
   var popUpText = document.getElementById("popUpText");
 
-  if(event.target.classList.contains("popUpBtnCard")) {
+  if (event.target.classList.contains("popUpBtnCard")) {
     var title = event.target.previousSibling.previousSibling.previousSibling.previousSibling.innerHTML;
     var text = event.target.previousSibling.previousSibling.innerHTML;
-  } else if(event.target.classList.contains("popUpBtnBrief")) {
+  } else if (event.target.classList.contains("popUpBtnBrief")) {
     var title = event.target.previousElementSibling.previousElementSibling.innerHTML;
     var text = event.target.previousElementSibling.innerHTML;
   }
 
   popUpTitle.innerHTML = title;
-  popUpText.innerHTML = text.replace("...", ""); //replaces ... with empty whitespace to return text to original form.
+  popUpText.innerHTML = text.replace("...", ""); // replaces ... with empty whitespace to return text to original form.
 
   popUpText.firstElementChild.classList.toggle("hidden");
-  
+
   popup.style.display = "block";
 }
 
@@ -144,14 +145,14 @@ function truncate(text, maxCount) { // surronds text over 120 characers with a s
 function injectBrief() {
   var brief = document.getElementById("js-content-brief");
 
-  if(briefText.length > 300) {
+  if (briefText.length > 300) {
     briefText = truncate(briefText, 299);
   }
 
   var briefHtml = `<p>`.concat(briefText).concat(`</p>`);
 
   var button = `<button class="popUpBtnBrief purple-background-theme toggle-button-background" onclick="popUp(event)">Read More</button>`;
-  
+
   brief.appendChild(elementFromHtml(briefHtml));
   brief.appendChild(elementFromHtml(button));
 }
