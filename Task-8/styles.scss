@@ -1,4 +1,5 @@
 $openfashion-grey: #555555;
+$openfashion-silver: #E1E0DB;
 $openfashion-orange: #DD8560;
 
 .hide {
@@ -7,6 +8,32 @@ $openfashion-orange: #DD8560;
 
 .text-black {
     color: black !important;
+}
+
+.bg-orange {
+    background-color: $openfashion-orange;
+    color: $openfashion-orange;
+}
+
+.bg-silver {
+    background-color: $openfashion-silver;
+    color: $openfashion-silver;
+}
+
+.btn.rounded-circle {
+    width: 22px !important;
+    height: 22px !important;
+    padding: 1rem !important;
+    font-size: 10px !important;    
+}
+
+.footer-text {
+    @extend .tenor-sans;
+    letter-spacing: 0.01em !important;
+}
+
+.tenor-sans {
+    font-family: 'Tenor Sans', sans-serif;
 }
 
 .nav-link, .open-fashion-font {
@@ -86,7 +113,6 @@ $openfashion-orange: #DD8560;
         box-shadow: none;
     }
 }
-
 
 .carousel {
      .carousel-indicators li { // for some reason, .carousel-indicators only work when referenced within the context of their parent class, carousel?

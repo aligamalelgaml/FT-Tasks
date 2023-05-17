@@ -6,6 +6,31 @@
   color: black !important;
 }
 
+.bg-orange {
+  background-color: #DD8560;
+  color: #DD8560;
+}
+
+.bg-silver {
+  background-color: #E1E0DB;
+  color: #E1E0DB;
+}
+
+.btn.rounded-circle {
+  width: 22px !important;
+  height: 22px !important;
+  padding: 1rem !important;
+  font-size: 10px !important;
+}
+
+.footer-text {
+  letter-spacing: 0.01em !important;
+}
+
+.tenor-sans, .footer-text {
+  font-family: 'Tenor Sans', sans-serif;
+}
+
 .nav-link, .nav-link.dropdown-toggle, .accordion-item, .open-fashion-font, .item-price, .item-title, .item-brand {
   font-family: 'Tenor Sans', sans-serif;
   font-size: 14px;
