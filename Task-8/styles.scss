@@ -20,6 +20,10 @@ $openfashion-orange: #DD8560;
     color: $openfashion-silver;
 }
 
+.btn:hover {
+    color: transparent;
+}
+
 .btn.rounded-circle {
     width: 22px !important;
     height: 22px !important;

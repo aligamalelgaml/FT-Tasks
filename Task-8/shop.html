@@ -482,7 +482,7 @@
             <a class="search-icon menu-hide" href="#"> <i class="fa-solid fa-magnifying-glass fa-lg text-black"></i>
             </a>
 
-            <a class="cart-icon menu-hide" href="#"> <i class="fa-solid fa-bag-shopping fa-lg ms-4 text-black"></i></a>
+            <a class="cart-icon menu-hide" id="cart-button" href="#"> <i class="fa-solid fa-bag-shopping fa-lg ms-4 text-black"></i></a>
 
         </div>
     </nav>
@@ -532,22 +532,33 @@
         <div class="row mt-2">
             <div class="col-6 d-flex justify-content-center align-items-center align-content-center gap-1">
                 <span class="tenor-sans me-1">Colors</span>
+
+                <!-- <div class="form-check form-check-inline">
+                    <input class="form-check-input bg-dark" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input bg-orange" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input bg-silver" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                </div> -->
+                
                 <button type="button"
-                    class="btn bg-dark rounded-circle d-flex align-items-center justify-content-center">S</button>
+                    class="btn bg-dark rounded-circle d-flex align-items-center justify-content-center" id="black-add-button">S</button>
                 <button type="button"
-                    class="btn bg-orange rounded-circle  d-flex align-items-center justify-content-center">M</button>
+                    class="btn bg-orange rounded-circle d-flex align-items-center justify-content-center" id="red-add-button">M</button>
                 <button type="button"
-                    class="btn bg-silver rounded-circle d-flex align-items-center justify-content-center">L</button>
+                    class="btn bg-silver rounded-circle d-flex align-items-center justify-content-center" id="silver-add-button">L</button>
             </div>
 
             <div class="col-6 d-flex justify-content-center align-items-center align-content-center gap-1">
                 <span class="tenor-sans me-1">Size</span>
                 <button type="button"
-                    class="btn bg-dark rounded-circle text-white d-flex align-items-center justify-content-center">S</button>
+                    class="btn bg-dark rounded-circle text-white d-flex align-items-center justify-content-center" id="small-add-button">S</button>
                 <button type="button"
-                    class="btn bg-silver rounded-circle text-black d-flex align-items-center justify-content-center">M</button>
+                    class="btn bg-silver rounded-circle text-black d-flex align-items-center justify-content-center" id="meduim-add-button"> M</button>
                 <button type="button"
-                    class="btn bg-silver rounded-circle text-black d-flex align-items-center justify-content-center">L</button>
+                    class="btn bg-silver rounded-circle text-black d-flex align-items-center justify-content-center" id="large-add-button">L</button>
             </div>
         </div>
     </div>
