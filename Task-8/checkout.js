@@ -1,25 +1,15 @@
-let purchase = JSON.parse(`{
+let purchase = {
     "color": "black",
     "size": "small",
     "number": 1
-  }`);
+  };
 
 let purchases = [];
 
+let total_purchase_counter = 1;
+
 
 $(document).ready(function() {
-
-    removeOnMenuClick();
-
-    getColorSize();
-
-    initialAddCart();
-
-  });
-
-
-
-function removeOnMenuClick() { // removes menu icons & logo on button expansion
 
     $(".navbar-toggler").click(function() {
 
@@ -32,59 +22,8 @@ function removeOnMenuClick() { // removes menu icons & logo on button expansion
         } else {
           $(".menu-hide").toggleClass("hide");
         }
-      });
-}
-
-function initialAddCart() { // handles the initial click on the 'add to basket' button, creates the new footer and calls the function that listens to the plus/minus clicks.
-    $("#initialAddButton").click(function(e) { 
-        e.preventDefault();
-
-        $("#footer-basket-add").addClass("hide");
-
-        let footerTemplate = createFooterTemplate(1)
-
-        $("#footer-container").append(footerTemplate);
-
-        addPurchase();
-
-        updateFooterCartCounter();
-    });
-}
-
-function updateFooterCartCounter() { // listens to + or - events and adjusts the counter accordingly, reverts to the old footer if the counter reachs zero.
-    let total_purchase_counter = 1;
-
-
-    $("#minusCart").click(function (e) { 
-        e.preventDefault();
-
-        if(total_purchase_counter == 1) {
-            $("#js-purchase-counter").remove();
-            $("#footer-basket-add").removeClass("hide");
-        }
-
-        total_purchase_counter = total_purchase_counter - 1;
-
-        deletePurchase();
-
-        $("#purchase-count").text(total_purchase_counter);
-
-        console.log(purchases);
     });
 
-    $("#plusCart").click(function (e) { 
-        e.preventDefault();
-
-        total_purchase_counter = total_purchase_counter + 1;
-
-        $("#purchase-count").text(total_purchase_counter);
-
-        addPurchase();
-    });
-
-}
-
-function getColorSize() {
     $("#black-add-button").click(function (e) { 
         e.preventDefault();
 
@@ -123,61 +62,98 @@ function getColorSize() {
         console.log(purchase);
     });
 
+    $("#initialAddButton").click(function(e) { 
+        e.preventDefault();
+
+        $("#footer-basket-add").addClass("hide");
+
+        let footerTemplate = createFooterTemplate(1)
+
+        $("#footer-container").append(footerTemplate);
+
+        addPurchase();
+    });
+});
+
+
+function minusHandle(e){
+    e.preventDefault();
+
+    if(total_purchase_counter == 1) {
+        $("#js-purchase-counter").remove();
+        $("#footer-basket-add").removeClass("hide");
+    }
+
+    total_purchase_counter = total_purchase_counter - 1;
+
+    deletePurchase();
+
+    $("#purchase-count").text(total_purchase_counter);
+}
+
+function plusHandle(e){
+    e.preventDefault();
+
+    total_purchase_counter = total_purchase_counter + 1;
+
+    $("#purchase-count").text(total_purchase_counter);
+
+    addPurchase();
 }
 
 function addPurchase() {
-    console.log("purchases:" + purchases);
-    console.log(purchase);
+    let existingPurchase = purchases.find(e => (e.color === purchase.color && e.size === purchase.size));
 
-
-    // let existingPurchase = purchases.find(e => (e.color === purchase.color && e.size === purchase.size));
-
-    existingPurchase = purchases.some(function(e) {
-        return e.color === purchase.color && e.size === purchase.size;
-    });
-
-    console.log("existing purchase:" + existingPurchase)
-    
-    // if() {
-    //     console.log("found exisiting purchase, incrementing")
-    //     e.number = e.number + 1;
-    // } else {
-    //     purchases.push(purchase);
-    // }
-    // // if (!existingPurchase) {
-    // } else {
-    //     existingPurchase.number++;
-    // }
+    if(existingPurchase === undefined) {
+        const newPurchase = JSON.parse(JSON.stringify(purchase));
+        purchases.push(newPurchase);
+    } else {
+        console.log("found exisiting, incrementing..")
+        existingPurchase.number = existingPurchase.number + 1;
+    }
+   
 }
 
 function deletePurchase() {
-    let existingPurchase = purchases.find(e => e.color === purchase.color && e.size === purchase.size);
-    
-    if (existingPurchase) {
-      existingPurchase.number--;
+    let lastPurchase = purchases.at(-1);
 
-      if(existingPurchase.number == 0) {
-        purchases = purchases.filter(function(e) {e != existingPurchase});
+    if (lastPurchase) {
+      lastPurchase.number--;
+
+      if(lastPurchase.number == 0) {
+        purchases = purchases.filter(function(e) {e !== lastPurchase});
       }
     } else {
       return;
     }
 }
 
+function showCart(e){
+    e.preventDefault();
 
+    $(".listing-page").addClass("hide");
+    $(".cart-page").removeClass("hide");
 
+}
+
+function closeCart(e){
+    e.preventDefault();
+
+    $(".cart-page").addClass("hide");
+    $(".listing-page").removeClass("hide");
+}
 
 function createFooterTemplate(count) { // helper function
     let footerTemplate = `
     <div class="row align-items-center text-center gx-0" id="js-purchase-counter">
         <div class="col-4">
-            <a href="#" id="minusCart"><i class="fa-solid fa-circle-minus text-decoration-none text-white fs-1"></i></a>
+            <a href="#" onclick="minusHandle(event)" id="minusCart"><i class="fa-solid fa-circle-minus text-decoration-none text-white fs-1"></i></a>
         </div>
         <div class="col-4">
             <span id="purchase-count"> ${count} </span>
         </div>
         <div class="col-4">
-            <a href="#" id="plusCart"><i class="fa-solid fa-circle-plus text-decoration-none text-white fs-1"></i></a>
+            <a href="#" onclick="plusHandle(event)" id="plusCart"><i class="fa-solid fa-circle-plus text-decoration-none text-white fs-1"></i></a>
         </div>
     </div>
     `;

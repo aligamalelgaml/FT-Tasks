@@ -1,4 +1,5 @@
 $openfashion-grey: #555555;
+$openfashion-silvergrey: #888888;
 $openfashion-silver: #E1E0DB;
 $openfashion-orange: #DD8560;
 
@@ -8,6 +9,14 @@ $openfashion-orange: #DD8560;
 
 .text-black {
     color: black !important;
+}
+
+.text-orange {
+    color: $openfashion-orange !important;
+}
+
+.text-silvergrey {
+    color: $openfashion-silvergrey !important;
 }
 
 .bg-orange {
@@ -31,9 +40,31 @@ $openfashion-orange: #DD8560;
     font-size: 10px !important;    
 }
 
+.disclaimer-text {
+    @extend .text-silvergrey;
+    letter-spacing: normal !important;
+    font-size: 16px !important;
+    line-height: 24px !important;
+}
+
 .footer-text {
     @extend .tenor-sans;
     letter-spacing: 0.01em !important;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #f8f9fa; /* Add your desired background color */
+    padding: 10px 0;
+  }
+
+.cart-title {
+    @extend .tenor-sans;
+    font-size: 18px;
+    letter-spacing: 4px;
 }
 
 .tenor-sans {
@@ -116,6 +147,8 @@ $openfashion-orange: #DD8560;
     &:focus {
         box-shadow: none;
     }
+
+    padding: 0;
 }
 
 .carousel {

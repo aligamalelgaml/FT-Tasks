@@ -16,6 +16,7 @@
 
 <body class="">
 
+<div class="listing-page">
     <nav class="navbar navbar-expand-xxl navbar-light">
         <div class="container-fluid">
             <button class="navbar-toggler border-0 collapsed" type="button" data-bs-toggle="collapse"
@@ -479,10 +480,9 @@
             <a class="navbar-brand mx-auto menu-hide" href="#"><img src="./assets/Logo.png" class="img-fluid"
                     alt="Open Fashion (logo)"></a>
 
-            <a class="search-icon menu-hide" href="#"> <i class="fa-solid fa-magnifying-glass fa-lg text-black"></i>
-            </a>
+            <a class="search-icon menu-hide" href="#"> <i class="fa-solid fa-magnifying-glass fa-lg text-black"></i></a>
 
-            <a class="cart-icon menu-hide" id="cart-button" href="#"> <i class="fa-solid fa-bag-shopping fa-lg ms-4 text-black"></i></a>
+            <a class="cart-icon menu-hide" onclick="showCart(event)" id="cart-button" href="#"> <i class="fa-solid fa-bag-shopping fa-lg ms-4 text-black"></i></a>
 
         </div>
     </nav>
@@ -531,18 +531,7 @@
 
         <div class="row mt-2">
             <div class="col-6 d-flex justify-content-center align-items-center align-content-center gap-1">
-                <span class="tenor-sans me-1">Colors</span>
-
-                <!-- <div class="form-check form-check-inline">
-                    <input class="form-check-input bg-dark" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-                  </div>
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input bg-orange" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-                  </div>
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input bg-silver" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
-                </div> -->
-                
+                <span class="tenor-sans me-1">Colors</span>                
                 <button type="button"
                     class="btn bg-dark rounded-circle d-flex align-items-center justify-content-center" id="black-add-button">S</button>
                 <button type="button"
@@ -582,6 +571,63 @@
 
         </div>
     </footer>
+</div>
+
+<div class="cart-page hide">
+    <div class="container p-3">
+        <div class="row mb-3">
+            <a href="#" onclick="closeCart(event)" id="close-cart-button"><i class="fa-solid fa-xmark text-black fs-3"></i></a>
+        </div>
+    
+        <div class="row mb-3">
+            <span class="tenor-sans cart-title fs-3">CART</span>
+        </div>
+
+        <div class="row" id="js-cart-items">
+            <div class="col-12">
+                <div class="row">
+                    <div class="col-4">
+                        <img src="./assets/jacket.png" class="img-fluid" alt="jacket small image">
+                    </div>
+    
+                    <div class="col-8">
+                        <div class="row">
+                            <span class="item-brand fs-6">MOHAN</span>
+                            <span class="item-title fs-6 ">Recycle Boucle Knit Cardigan Pink</span>
+                            <span class="item-price">${count}</span>
+                            <span class="item-price">$120</span>
+                        </div>
+                    </div>
+
+                    <hr>
+                </div>
+
+                <div class="row justify-content-between">
+                    <div class="col-6">
+                        <span class="item-brand fs-6">SUB TOTAL </span>
+                    </div>
+
+                    <div class="col-6 text-end">
+                        <span class="item-brand fs-6 text-orange">${total}</span>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <p class="open-fashion-font disclaimer-text">* shipping charges, taxes and discount codes are calculated at time of accounting.</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <footer class="container-fluid footer bg-dark">
+        <div class="row">
+          <div class="col-12 col-sm-6 text-center text-white"><i class="fa-solid fa-bag-shopping fa-lg ms-4 text-white me-3"></i> BUY NOW </div>
+        </div>
+      </footer>
+
+
+</div>
 
 
 
