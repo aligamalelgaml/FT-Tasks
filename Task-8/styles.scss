@@ -1,0 +1,76 @@
+.hide {
+    display: none;
+  }
+
+.text-black {
+    color: black !important;
+}
+
+.nav-link {
+    @extend .text-black;
+    font-family: 'Tenor Sans', sans-serif;
+    font-size: 14px;
+    line-height: 246%;
+    font-weight: 400;
+    letter-spacing: 3px;
+    background-color: inherit !important; 
+} 
+
+.nav-link.dropdown-toggle, .accordion-item{
+    @extend .nav-link;
+    letter-spacing: normal;
+    font-size: 16px !important;
+    line-height: 303%;
+}
+
+.nav-link.active {
+    text-decoration: underline;
+    text-decoration-color: #DD8560;
+    text-underline-offset: 1rem;
+    background-color: inherit !important; 
+} 
+
+.dropdown-toggle::after {
+    float: right;
+    margin-top: 1.3rem;
+    margin-right: 1rem;
+    border-top: 0.4em solid;
+    border-right: 0.4em solid transparent;
+    border-bottom: 0;
+    border-left: 0.4em solid transparent;
+}
+
+.accordion-item, .accordion-button:focus, .accordion-button:active, .list-group-item { 
+    background-color: transparent;
+    border-color: transparent;
+    box-shadow: none;
+    color: black
+}
+
+.accordion-button:not(.collapsed)::after { // restores original black chevron
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+.navbar-toggler {
+    .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml,%3Csvg%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%3Cpath%20d%3D%22M6.2253%204.81108C5.83477%204.42056%205.20161%204.42056%204.81108%204.81108C4.42056%205.20161%204.42056%205.83477%204.81108%206.2253L10.5858%2012L4.81114%2017.7747C4.42062%2018.1652%204.42062%2018.7984%204.81114%2019.1889C5.20167%2019.5794%205.83483%2019.5794%206.22535%2019.1889L12%2013.4142L17.7747%2019.1889C18.1652%2019.5794%2018.7984%2019.5794%2019.1889%2019.1889C19.5794%2018.7984%2019.5794%2018.1652%2019.1889%2017.7747L13.4142%2012L19.189%206.2253C19.5795%205.83477%2019.5795%205.20161%2019.189%204.81108C18.7985%204.42056%2018.1653%204.42056%2017.7748%204.81108L12%2010.5858L6.2253%204.81108Z%22%20fill%3D%22currentColor%22%2F%3E%0A%3C%2Fsvg%3E");
+    }
+  
+    &.collapsed {
+      .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml,%3Csvg%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%3Cpath%20d%3D%22M4%206C4%205.44772%204.44772%205%205%205H19C19.5523%205%2020%205.44772%2020%206C20%206.55228%2019.5523%207%2019%207H5C4.44772%207%204%206.55228%204%206Z%22%20fill%3D%22currentColor%22%2F%3E%0A%20%20%3Cpath%20d%3D%22M4%2018C4%2017.4477%204.44772%2017%205%2017H19C19.5523%2017%2020%2017.4477%2020%2018C20%2018.5523%2019.5523%2019%2019%2019H5C4.44772%2019%204%2018.5523%204%2018Z%22%20fill%3D%22currentColor%22%2F%3E%0A%20%20%3Cpath%20d%3D%22M5%2011C4.44772%2011%204%2011.4477%204%2012C4%2012.5523%204.44772%2013%205%2013H13C13.5523%2013%2014%2012.5523%2014%2012C14%2011.4477%2013.5523%2011%2013%2011H5Z%22%20fill%3D%22currentColor%22%2F%3E%0A%3C%2Fsvg%3E") !important;
+    }
+    }
+
+    &:focus {
+        box-shadow: none;
+    }
+  }
+
+
+
+
+
+
+
+
