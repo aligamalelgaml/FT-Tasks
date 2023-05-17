@@ -1,3 +1,6 @@
+$openfashion-grey: #555555;
+$openfashion-orange: #DD8560;
+
 .hide {
     display: none;
   }
@@ -6,7 +9,7 @@
     color: black !important;
 }
 
-.nav-link {
+.nav-link, .open-fashion-font {
     @extend .text-black;
     font-family: 'Tenor Sans', sans-serif;
     font-size: 14px;
@@ -25,10 +28,27 @@
 
 .nav-link.active {
     text-decoration: underline;
-    text-decoration-color: #DD8560;
+    text-decoration-color: $openfashion-orange;
     text-underline-offset: 1rem;
     background-color: inherit !important; 
 } 
+
+.item-brand {
+    @extend .open-fashion-font;
+    letter-spacing: 4px !important;
+}
+
+.item-title {
+    @extend .open-fashion-font;
+    color: $openfashion-grey !important;
+    letter-spacing: 1px !important;
+}
+
+.item-price {
+    @extend .open-fashion-font;
+    font-size: 22px !important;
+    color: $openfashion-orange !important;
+}
 
 .dropdown-toggle::after {
     float: right;

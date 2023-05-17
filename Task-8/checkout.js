@@ -11,17 +11,13 @@ $(document).ready(function() {
 
 function removeOnMenuClick() {
     $(".navbar-toggler").click(function() {
-
-        if($(".navbar-toggler").hasClass("collapsed")) {
-
-            setTimeout(function (){
+        if ($(this).hasClass("collapsed")) {
+          setTimeout(function() {
             $(".menu-hide").toggleClass("hide");
-              }, 350); // 350 ms delay so that the rest of the menu does not show up as sliding up with the collapsing menu.
-
-            return;  
-        } 
-
-        $(".menu-hide").toggleClass("hide");
-    });
+          }, 375); // 375ms delay to ensure rest of navbar icons do not float up the screen as the menu is closing.
+        } else {
+          $(".menu-hide").toggleClass("hide");
+        }
+      });
 }
 

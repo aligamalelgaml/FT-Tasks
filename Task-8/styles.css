@@ -2,11 +2,11 @@
   display: none;
 }
 
-.text-black, .nav-link, .nav-link.dropdown-toggle, .accordion-item {
+.text-black, .nav-link, .nav-link.dropdown-toggle, .accordion-item, .open-fashion-font, .item-price, .item-title, .item-brand {
   color: black !important;
 }
 
-.nav-link, .nav-link.dropdown-toggle, .accordion-item {
+.nav-link, .nav-link.dropdown-toggle, .accordion-item, .open-fashion-font, .item-price, .item-title, .item-brand {
   font-family: 'Tenor Sans', sans-serif;
   font-size: 14px;
   line-height: 246%;
@@ -26,6 +26,20 @@
   text-decoration-color: #DD8560;
   text-underline-offset: 1rem;
   background-color: inherit !important;
+}
+
+.item-brand {
+  letter-spacing: 4px !important;
+}
+
+.item-title {
+  color: #555555 !important;
+  letter-spacing: 1px !important;
+}
+
+.item-price {
+  font-size: 22px !important;
+  color: #DD8560 !important;
 }
 
 .dropdown-toggle::after {
