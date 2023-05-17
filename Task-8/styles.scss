@@ -65,7 +65,23 @@
     &:focus {
         box-shadow: none;
     }
-  }
+}
+
+
+.carousel {
+     .carousel-indicators li { // for some reason, .carousel-indicators only work when referenced within the context of their parent class, carousel?
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: rgba(0, 0, 0, 0.5);
+        margin: 0 4px;
+        cursor: pointer;
+
+        &.active {
+            background-color: rgba(0, 0, 0, 0.9);
+        }
+      }
+} 
 
 
 
