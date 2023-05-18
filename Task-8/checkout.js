@@ -44,36 +44,42 @@ function getColorSize() {
         e.preventDefault();
 
         purchase.color = "black";
+        $(".select-circle-black").addClass("selected");
     });
 
     $("#red-add-button").click(function (e) { 
         e.preventDefault();
 
         purchase.color = "red";
+        $(".select-circle-red").addClass("selected");
     });
 
     $("#silver-add-button").click(function (e) { 
         e.preventDefault();
 
         purchase.color = "silver";
+        $(".select-circle-silver").addClass("selected");
     });
 
     $("#small-add-button").click(function (e) { 
         e.preventDefault();
 
         purchase.size = "small";
+        $(".select-circle-small").addClass("selected");
     });
 
     $("#meduim-add-button").click(function (e) { 
         e.preventDefault();
 
-        purchase.size = "meduim";
+        purchase.size = "medium";
+        $(".select-circle-medium").addClass("selected");
     });
 
     $("#large-add-button").click(function (e) { 
         e.preventDefault();
 
         purchase.size = "large";
+        $(".select-circle-large").addClass("selected");
     });
 }
 
@@ -158,12 +164,6 @@ function calculateAndInjectTotal() {
 
         $("#js-cart-items").append(createSubtotalAppendTemplate());
     }
-
-    // purchases.forEach(itemPurchase => { // incase we need to create seperate item listing for different colors/sizes.
-    //     $("#js-cart-items").append(createItemAppendTemplate(item));
-    //     console.log(itemPurchase);
-    // });
-
 }
 
 function createFooterTemplate(count) { // helper function
@@ -185,6 +185,14 @@ function createFooterTemplate(count) { // helper function
 }
 
 function createItemAppendTemplate() {
+    blackCircle = $(".get-circle-black").html();
+    redCircle = $(".get-circle-red").html();
+    silverCircle = $(".get-circle-silver").html();
+
+    smallCircle = $(".get-circle-small").html();
+    mediumCircle = $(".get-circle-medium").html();
+    largeCircle = $(".get-circle-large").html();
+
     itemAppendTemplate = `
     <div class="row item-img-wrapper">
         <div class="col-4">
@@ -199,10 +207,30 @@ function createItemAppendTemplate() {
                 <div class="col-12">
                     <a href="#" onclick="minusHandle(event);updateSubtotal();" id="minusCart"><i class="fa-solid fa-circle-minus text-decoration-none text-black fs-4"></i></a>
                     <span class="item-price purchase-count">${total_purchase_counter}</span>
-                    <a href="#" onclick="plusHandle(event);updateSubtotal();" id="plusCart"><i class="fa-solid fa-circle-plus text-decoration-none text-black fs-4"></i></a>
+                    <a href="#" onclick="plusHandle(event);updateSubtotal();" id="plusCart"><i class="fa-solid fa-circle-plus text-decoration-none text-black fs-4"></i></a>                    
                 </div>
+
                 <span class="item-price">$120</span>
+
             </div>
+        </div>
+
+        <div class="col-12 mt-4 mb-4">
+        <div class="row">
+        <div class="col-6 d-flex justify-content-center align-items-center align-content-center gap-1">
+            <span class="tenor-sans me-1">Colors</span>                
+            ${blackCircle}
+            ${redCircle}
+            ${silverCircle}
+        </div>
+
+        <div class="col-6 d-flex justify-content-center align-items-center align-content-center gap-1">
+            <span class="tenor-sans me-1">Size</span>
+            ${smallCircle}
+            ${mediumCircle}
+            ${largeCircle}
+        </div>
+    </div>
         </div>
     </div>`
 
