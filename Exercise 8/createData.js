@@ -3,22 +3,50 @@ $(document).ready(function(){
     $('#backend-form').submit(function(e) {
         e.preventDefault();
 
-        var title = $("#inputTitle").val();
-        var description = $("#inputDesc").val();
-        var number = $("#inputNumber").val();
-        var selected = $('#selectDropdown').find(":selected").text();
+        var entries = [];
 
-        // console.log(title + description + number + selected);
+        if(localStorage.getItem("inputData") === null) {
+            var data = [];
+            localStorage.setItem("inputData", JSON.stringify(data));
+        }
+
+
+        $("#backend-form :input[type=text], #backend-form :input[type=number], #backend-form :input[type=option]").each(function(){
+            var input = $(this).val(); 
+            var inputLabel = $("label[for='" + $(this).attr('id') + "']").text();
+
+            if(validate($(this), input, inputLabel)) {
+                var jsonEntry = { [inputLabel] : input};
+                console.log(jsonEntry);
+    
+                entries.push(jsonEntry);
+            }
+            
+        });
+
+        if(entries.length === 4) {
+            data = JSON.parse(localStorage.getItem("inputData"));
+            data.push(entries);
+            localStorage.setItem("inputData", JSON.stringify(data));
+        }
 
         $('#backend-form').trigger("reset"); // resets form to be empty for new todo.
-
-        localStorage.setItem("title", title);
-        localStorage.setItem("desc", description);
-        localStorage.setItem("number", number);
-        localStorage.setItem("selected", selected);
-
-        console.log($("#backend-form").val());
-        
     });
 
   });
+
+  function validate(formElement, input, inputLabel) {
+    var formType = formElement.attr('type');
+
+    if(formElement.val() === "") {
+        alert(inputLabel + " is missing!");
+        return false;
+    }
+
+    if(formType === "option" && input === "Select a platform") {
+        alert("Platform selection is missing!");
+        return false;
+    }
+
+    return true;
+  }
