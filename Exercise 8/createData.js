@@ -3,7 +3,7 @@ $(document).ready(function(){
     $('#backend-form').submit(function(e) {
         e.preventDefault();
 
-        var entries = [];
+        var entry = {};
 
         if(localStorage.getItem("inputData") === null) {
             var data = [];
@@ -16,17 +16,13 @@ $(document).ready(function(){
             var inputLabel = $("label[for='" + $(this).attr('id') + "']").text();
 
             if(validate($(this), input, inputLabel)) {
-                var jsonEntry = { [inputLabel] : input};
-                console.log(jsonEntry);
-    
-                entries.push(jsonEntry);
+                entry[inputLabel] = input;
             }
-            
         });
 
-        if(entries.length === 4) {
+        if(Object.keys(entry).length === 4) {
             data = JSON.parse(localStorage.getItem("inputData"));
-            data.push(entries);
+            data.push(entry);
             localStorage.setItem("inputData", JSON.stringify(data));
         }
 

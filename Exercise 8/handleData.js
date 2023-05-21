@@ -1,29 +1,38 @@
 $(document).ready(function(){
 
-    var title = localStorage.getItem("title");
-    var desc = localStorage.getItem("desc");
-    var number = localStorage.getItem("number");
-    var selected = localStorage.getItem("selected");
-    var oldData = JSON.parse(localStorage.getItem("oldData"));
+    var inputData = JSON.parse(localStorage.getItem("inputData"));
 
-    var cardTemplate = createCardTemplate(title, desc, number, selected)
+    inputData.forEach(entry => {
+        entry.forEach(atr => {
+            console.log(atr);
+        })
+        
+    });
 
-    console.log(oldData);
+    // var title = localStorage.getItem("title");
+    // var desc = localStorage.getItem("desc");
+    // var number = localStorage.getItem("number");
+    // var selected = localStorage.getItem("selected");
+    // var oldData = JSON.parse(localStorage.getItem("oldData"));
+
+    // var cardTemplate = createCardTemplate(title, desc, number, selected)
+
+    // console.log(oldData);
 
 
-    if(oldData === null) {
-        var data = [];
-        data.push(cardTemplate);
-        localStorage.setItem("oldData", JSON.stringify(data));
-    } else {
-        oldData.forEach(element => {
-            $("#js-card-content").append(element);
-        });
-        oldData.push(cardTemplate);
-        localStorage.setItem("oldData", JSON.stringify(oldData));
-    }
+    // if(oldData === null) {
+    //     var data = [];
+    //     data.push(cardTemplate);
+    //     localStorage.setItem("oldData", JSON.stringify(data));
+    // } else {
+    //     oldData.forEach(element => {
+    //         $("#js-card-content").append(element);
+    //     });
+    //     oldData.push(cardTemplate);
+    //     localStorage.setItem("oldData", JSON.stringify(oldData));
+    // }
 
-    $("#js-card-content").append(cardTemplate);
+    // $("#js-card-content").append(cardTemplate);
 
 
   });
