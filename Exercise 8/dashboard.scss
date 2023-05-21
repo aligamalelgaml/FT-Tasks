@@ -1,0 +1,21 @@
+.card {
+    background-color: #f0f3fa;
+}
+
+.facebookBorderTop {
+    border-top-color: #1791f7;
+}
+
+.twitterBorderTop {
+    border-top-color: #1da2f0;
+}
+
+.instagramBorderTop {
+    border-top: 15px solid #c4268c;
+    border-image: linear-gradient(to left, rgba(0, 0, 0, 1) 1%, rgba(0, 255, 255, 1) 50%, rgba(0, 0, 0, 1) 100%) 
+    100% 0 0% 0/3px 0 3px 0 stretch;
+}
+
+.youtubeBorderTop {
+    border-top-color: #c4032b;
+}

@@ -16,7 +16,7 @@ $(document).ready(function(){
             var inputLabel = $("label[for='" + $(this).attr('id') + "']").text();
 
             if(validate($(this), input, inputLabel)) {
-                entry[inputLabel] = input;
+                entry[inputLabel.toLowerCase()] = input;
             }
         });
 
