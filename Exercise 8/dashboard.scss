@@ -1,21 +1,57 @@
+.body-dark-theme {
+    background-color: #22252d;
+}
+
+.card-dark-theme {
+    background-color: #2a2f44;
+}
+
+
 .card {
     background-color: #f0f3fa;
 }
 
+.followers-text {
+    letter-spacing: 1px;
+    font-weight: 850;
+}
+
+.number-text {
+    font-weight: 900;
+}
+
+.overview-text {
+    color: grey;
+    font-weight: 700;
+}
+
+.removeSideBottomBorders {
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 0px;
+}
+
 .facebookBorderTop {
-    border-top-color: #1791f7;
+    border-top: 5px solid #1791f7;
+    @extend .removeSideBottomBorders;
 }
 
 .twitterBorderTop {
-    border-top-color: #1da2f0;
+    border-top: 5px solid #1da2f0;
+    @extend .removeSideBottomBorders;
 }
 
 .instagramBorderTop {
-    border-top: 15px solid #c4268c;
-    border-image: linear-gradient(to left, rgba(0, 0, 0, 1) 1%, rgba(0, 255, 255, 1) 50%, rgba(0, 0, 0, 1) 100%) 
-    100% 0 0% 0/3px 0 3px 0 stretch;
+    border-top: 5px solid #c4268c;
+    @extend .removeSideBottomBorders;
+    border-image: linear-gradient(to right, orange 10%, orange 33%, orange 33%,#c4268c 66%, #c4268c 66%, #c4268c 100%) 1;
+    border-radius: 5px;
+    background-image: linear-gradient(#f0f3fa, #f0f3fa), radial-gradient(circle at top left, #f00,#3020ff);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
 }
 
 .youtubeBorderTop {
-    border-top-color: #c4032b;
+    border-top: 5px solid #c4032b;
+    @extend .removeSideBottomBorders;
 }

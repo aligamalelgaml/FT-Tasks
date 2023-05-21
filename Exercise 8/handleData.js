@@ -23,26 +23,27 @@ function createCardTemplate(title, desc, number, platform) {
     var borderTopColor = ``;
 
     if(platform === "1") { // facebook
-        icon = `<i class="fa-brands fa-square-facebook ms-2" style="color: #1791f7;"></i>`;
+        icon = `<i class="fa-brands fa-square-facebook fa-xl me-2" style="color: #1791f7;"></i>`;
         borderTopColor = `facebookBorderTop`;
     } else if(platform === "2") { // twitter
-        icon = `<i class="fa-brands fa-square-twitter" style="color: #005eff;"></i>`;
+        icon = `<i class="fa-brands fa-square-twitter fa-xl me-2" style="color: #1da2f0;"></i>`;
         borderTopColor = `twitterBorderTop`;
     } else if(platform === "3") { // instagram
-        icon = `<i class="fa-brands fa-square-instagram" style="color: #005eff;"></i>`;
+        icon = `<i class="fa-brands fa-square-instagram fa-xl me-2" style="color: #c4268c;"></i>`;
         borderTopColor = `instagramBorderTop`;
     } else if(platform === "4") { // youtube
-        icon = `<i class="fa-brands fa-square-youtube" style="color: #005eff;"></i>`;
+        icon = `<i class="fa-brands fa-square-youtube fa-xl me-2" style="color: #c4032b;"></i>`;
         borderTopColor = `youtubeBorderTop`;
     }
 
     var template = `
     <div class="col-3">
     <div class="card ${borderTopColor}" style="width: 18rem;">
-        <div class="card-body">
-          <h5 class="card-title text-center">${icon} ${title}</h5>
-          <h6 class="card-subtitle mb-2 text-muted">${desc}</h6>
-          <p class="card-text">${number}</p>
+        <div class="card-body text-center">
+          <h6 class="card-title pt-2 mb-5">${icon} ${title}</h6>
+          <h2 class="card-subtitle mb-2 number-text">${number}</h2>
+          <h2 class="card-subtitle mb-4 followers-text">FOLLOWERS</h2>
+          <p class="card-text">${desc}</p>
         </div>
       </div>
     </div>
