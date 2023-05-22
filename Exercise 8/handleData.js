@@ -37,8 +37,8 @@ function createCardTemplate(title, desc, number, platform) {
     }
 
     var template = `
-    <div class="col-3">
-    <div class="card ${borderTopColor}" style="width: 18rem;">
+    <div class="col-12 mt-4 col-sm-3">
+    <div class="card ${borderTopColor} m-auto" style="width: 18rem;">
         <div class="card-body text-center">
           <h6 class="card-title pt-2 mb-5">${icon} ${title}</h6>
           <h2 class="card-subtitle mb-2 number-text">${number}</h2>

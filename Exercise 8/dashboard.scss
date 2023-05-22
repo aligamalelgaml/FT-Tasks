@@ -6,7 +6,6 @@
     background-color: #2a2f44;
 }
 
-
 .card {
     background-color: #f0f3fa;
 }
@@ -20,15 +19,38 @@
     font-weight: 900;
 }
 
-.overview-text {
-    color: grey;
+.text-grey-bold {
+    color: #696c76;
     font-weight: 700;
 }
+
+.text-green {
+    color: green;
+}
+
+.text-red {
+    color: red;
+}
+
+.form-check-label {
+    margin-left: -8rem;
+}
+
+@media(min-width: 576px) {
+    .hr-wrapper {
+        display: none;
+    }
+}  
 
 .removeSideBottomBorders {
     border-left: 0px;
     border-right: 0px;
     border-bottom: 0px;
+}
+
+.removeAllBorders {
+    @extend .removeSideBottomBorders;
+    border-top: 0px;
 }
 
 .facebookBorderTop {

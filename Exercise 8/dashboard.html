@@ -11,15 +11,19 @@
 <body>
 
     <div class="container mt-3">
-        <div class="row">
-            <div class="col-10">
-                <h1>Social Media Dashboard</h1>
-                <span>Total Followers: PLACEHOLDER</span>
+        <div class="row justify-content-between">
+            <div class="col-12 col-sm-10">
+                <h1 class="fw-bold title">Social Media Dashboard</h1>
+                <span class="text-grey-bold">Total Followers: 23,000</span>
             </div>
 
-            <div class="col-2 m-auto d-flex justify-content-center">
+            <div class="hr-wrapper">
+                <hr>
+            </div>
+
+            <div class="col-12 col-sm-2 m-auto d-flex justify-content-between justify-content-sm-center">
+                <span class="me-sm-3 text-grey-bold check-label">Dark Mode</span>
                 <div class="form-check form-switch">
-                    <label class="form-check-label" for="themeSwitch">Dark Mode</label>
                     <input class="form-check-input" type="checkbox" role="switch" id="themeSwitch">
                 </div>
             </div>
@@ -27,17 +31,154 @@
     </div>
 
     <div class="container mt-5">
-        <div class="row" id="js-card-content">
+        <div class="row justify-content-center" id="js-card-content">
             <!-- JS CONTENT HERE -->
         </div>
     </div>
 
     <div class="container mt-5">
         <div class="row">
-            <h1 class="overview-text">Overview Today</h1>
+            <h1 class="text-grey-bold">Overview Today</h1>
+        </div>
+
+        <div class="row mt-4">
+
+            <div class="col-12 col-sm-3">
+                <div class="card removeAllBorders mx-auto" style="width: 18rem;">
+                    <div class="card-body">
+                      <h6 class="card-title pt-2 mb-4 d-flex justify-content-between">
+                        <span class="text-grey-bold fs-5">Page Views</span>
+                        <span class="my-auto"><i class="fa-brands fa-square-facebook fa-xl me-2" style="color: #1791f7;"></i></span>
+                      </h6>
+
+                      <h2 class="card-subtitle mb-2 number-text d-flex justify-content-between">
+                        <span class="fs-1">87</span> 
+                        <span class="my-auto text-green fs-6 "><i class="fa-solid fa-caret-up"></i> 3%</span>
+                      </h2>
+                    </div>
+                  </div>
+            </div>
+
+            <div class="col-12 col-sm-3">
+                <div class="card removeAllBorders mx-auto mt-3 mt-sm-0" style="width: 18rem;">
+                    <div class="card-body">
+                      <h6 class="card-title pt-2 mb-4 d-flex justify-content-between">
+                        <span class="text-grey-bold fs-5">Likes</span>
+                        <span class="my-auto"><i class="fa-brands fa-square-facebook fa-xl me-2" style="color: #1791f7;"></i></span>
+                      </h6>
+
+                      <h2 class="card-subtitle mb-2 number-text d-flex justify-content-between">
+                        <span class="fs-1">87</span> 
+                        <span class="my-auto text-red fs-6 "><i class="fa-solid fa-caret-down"></i> 3%</span>
+                      </h2>
+                    </div>
+                  </div>
+                </div>
+
+            <div class="col-12 col-sm-3">
+                <div class="card removeAllBorders mx-auto mt-3 mt-sm-0" style="width: 18rem;">
+                    <div class="card-body">
+                      <h6 class="card-title pt-2 mb-4 d-flex justify-content-between">
+                        <span class="text-grey-bold fs-5">Likes</span>
+                        <span class="my-auto"><i class="fa-brands fa-square-youtube fa-xl me-2" style="color: #c4032b;"></i></span>
+                      </h6>
+
+                      <h2 class="card-subtitle mb-2 number-text d-flex justify-content-between">
+                        <span class="fs-1">12052</span> 
+                        <span class="my-auto text-green fs-6 "><i class="fa-solid fa-caret-up"></i> 243%</span>
+                      </h2>
+                    </div>
+                  </div>
+            </div>
+
+            <div class="col-12 col-sm-3">
+                <div class="card removeAllBorders mx-auto mt-3 mt-sm-0" style="width: 18rem;">
+                    <div class="card-body">
+                      <h6 class="card-title pt-2 mb-4 d-flex justify-content-between">
+                        <span class="text-grey-bold fs-5">Profile Views</span>
+                        <span class="my-auto"><i class="fa-brands fa-square-youtube fa-xl me-2" style="color: #c4032b;"></i></span>
+                      </h6>
+
+                      <h2 class="card-subtitle mb-2 number-text d-flex justify-content-between">
+                        <span class="fs-1">4020</span> 
+                        <span class="my-auto text-green fs-6 "><i class="fa-solid fa-caret-up"></i> 643%</span>
+                      </h2>
+                    </div>
+                  </div>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+
+            <div class="col-12 col-sm-3">
+                <div class="card removeAllBorders mx-auto" style="width: 18rem;">
+                    <div class="card-body">
+                      <h6 class="card-title pt-2 mb-4 d-flex justify-content-between">
+                        <span class="text-grey-bold fs-5">Retweets</span>
+                        <span class="my-auto"><i class="fa-brands fa-square-twitter fa-xl me-2" style="color: #1da2f0;"></i></span>
+                      </h6>
+
+                      <h2 class="card-subtitle mb-2 number-text d-flex justify-content-between">
+                        <span class="fs-1">87</span> 
+                        <span class="my-auto text-green fs-6 "><i class="fa-solid fa-caret-up"></i> 3%</span>
+                      </h2>
+                    </div>
+                  </div>
+            </div>
+
+            <div class="col-12 col-sm-3">
+                <div class="card removeAllBorders mx-auto mt-3 mt-sm-0" style="width: 18rem;">
+                    <div class="card-body">
+                      <h6 class="card-title pt-2 mb-4 d-flex justify-content-between">
+                        <span class="text-grey-bold fs-5">Likes</span>
+                        <span class="my-auto"><i class="fa-brands fa-square-twitter fa-xl me-2" style="color: #1da2f0;"></i></span>
+                      </h6>
+
+                      <h2 class="card-subtitle mb-2 number-text d-flex justify-content-between">
+                        <span class="fs-1">87</span> 
+                        <span class="my-auto text-red fs-6 "><i class="fa-solid fa-caret-down"></i> 3%</span>
+                      </h2>
+                    </div>
+                  </div>
+                </div>
+
+            <div class="col-12 col-sm-3">
+                <div class="card removeAllBorders mx-auto mt-3 mt-sm-0" style="width: 18rem;">
+                    <div class="card-body">
+                      <h6 class="card-title pt-2 mb-4 d-flex justify-content-between">
+                        <span class="text-grey-bold fs-5">Likes</span>
+                        <span class="my-auto"><i class="fa-brands fa-square-instagram fa-xl me-2" style="color: #c4268c;"></i></span>
+                      </h6>
+
+                      <h2 class="card-subtitle mb-2 number-text d-flex justify-content-between">
+                        <span class="fs-1">12052</span> 
+                        <span class="my-auto text-green fs-6 "><i class="fa-solid fa-caret-up"></i> 243%</span>
+                      </h2>
+                    </div>
+                  </div>
+            </div>
+
+            <div class="col-12 col-sm-3">
+                <div class="card removeAllBorders mx-auto mt-3 mt-sm-0" style="width: 18rem;">
+                    <div class="card-body">
+                      <h6 class="card-title pt-2 mb-4 d-flex justify-content-between">
+                        <span class="text-grey-bold fs-5">Total Views</span>
+                        <span class="my-auto"><i class="fa-brands fa-square-instagram fa-xl me-2" style="color: #c4268c;"></i></span>
+                      </h6>
+
+                      <h2 class="card-subtitle mb-2 number-text d-flex justify-content-between">
+                        <span class="fs-1">4020</span> 
+                        <span class="my-auto text-green fs-6 "><i class="fa-solid fa-caret-up"></i> 643%</span>
+                      </h2>
+                    </div>
+                  </div>
+            </div>
+
+
         </div>
 
     </div>
+
 
     <script src="https://kit.fontawesome.com/6b31f67ef3.js" crossorigin="anonymous"></script>    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
