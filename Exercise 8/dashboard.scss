@@ -4,19 +4,48 @@
 
 .card-dark-theme {
     background-color: #2a2f44;
+
+    &:hover {
+        background-color: #333a56;
+    }
+}
+
+.upper-section {
+    background-color: #f8f9fe;
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+}
+
+.upper-section-dark {
+    @extend .upper-section;
+    background-color: #20222f !important;
 }
 
 .card {
     background-color: #f0f3fa;
+
+    &:hover {
+        background-color: #e1e3f0;
+    }
 }
 
+
 .followers-text {
-    letter-spacing: 1px;
-    font-weight: 850;
+    letter-spacing: 5px;
+    @extend .text-grey-bold;
+    font-size: 12px;
 }
 
 .number-text {
     font-weight: 900;
+    font-size: 50px;
+}
+
+.grey-text-dark-mode {
+    color: #8e97c1 !important;
 }
 
 .text-grey-bold {
@@ -64,7 +93,7 @@
 }
 
 .instagramBorderTop {
-    border-top: 5px solid #c4268c;
+    border-top: 10px solid #c4268c;
     @extend .removeSideBottomBorders;
     border-image: linear-gradient(to right, orange 10%, orange 33%, orange 33%,#c4268c 66%, #c4268c 66%, #c4268c 100%) 1;
     border-radius: 5px;

@@ -1,0 +1,100 @@
+.body-dark-theme {
+  background-color: #22252d;
+}
+
+.card-dark-theme {
+  background-color: #2a2f44;
+}
+
+.card-dark-theme:hover {
+  background-color: #333a56;
+}
+
+.upper-section, .upper-section-dark {
+  background-color: #f8f9fe;
+  width: 100%;
+  height: 200px;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+}
+
+.upper-section-dark {
+  background-color: #20222f !important;
+}
+
+.card {
+  background-color: #f0f3fa;
+}
+
+.card:hover {
+  background-color: #e1e3f0;
+}
+
+.followers-text {
+  letter-spacing: 5px;
+  font-size: 12px;
+}
+
+.number-text {
+  font-weight: 900;
+  font-size: 50px;
+}
+
+.grey-text-dark-mode {
+  color: #8e97c1 !important;
+}
+
+.text-grey-bold, .followers-text {
+  color: #696c76;
+  font-weight: 700;
+}
+
+.text-green {
+  color: green;
+}
+
+.text-red {
+  color: red;
+}
+
+.form-check-label {
+  margin-left: -8rem;
+}
+
+@media (min-width: 576px) {
+  .hr-wrapper {
+    display: none;
+  }
+}
+
+.removeSideBottomBorders, .youtubeBorderTop, .instagramBorderTop, .twitterBorderTop, .facebookBorderTop, .removeAllBorders {
+  border-left: 0px;
+  border-right: 0px;
+  border-bottom: 0px;
+}
+
+.removeAllBorders {
+  border-top: 0px;
+}
+
+.facebookBorderTop {
+  border-top: 5px solid #1791f7;
+}
+
+.twitterBorderTop {
+  border-top: 5px solid #1da2f0;
+}
+
+.instagramBorderTop {
+  border-top: 10px solid #c4268c;
+  border-image: linear-gradient(to right, orange 10%, orange 33%, orange 33%, #c4268c 66%, #c4268c 66%, #c4268c 100%) 1;
+  border-radius: 5px;
+  background-image: linear-gradient(#f0f3fa, #f0f3fa), radial-gradient(circle at top left, #f00, #3020ff);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+}
+
+.youtubeBorderTop {
+  border-top: 5px solid #c4032b;
+}
